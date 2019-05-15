@@ -3,12 +3,13 @@
     "target": "es5",
     "module": "commonjs",
     "lib": [
+      "dom",
       "es2015"
     ],
     "declaration": true,
     "outDir": "./lib",
     "strict": true
   },
-  "include": ["src"],
+  "include": ["src", "test/index.spec.ts"],
   "exclude": ["node_modules", "**/__tests__/*"]
 }
