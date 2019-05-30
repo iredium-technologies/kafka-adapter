@@ -4,13 +4,14 @@
   "description": "",
   "main": "src/index.js",
   "files": [
-    "lib/**/*"
+    "lib"
   ],
   "scripts": {
     "test": "jest --forceExit --detectOpenHandles --config jestconfig.json",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "build": "tsc"
+    "build": "tsc",
+    "release": "yarn build && yarn publish"
   },
   "keywords": [],
   "author": "",
