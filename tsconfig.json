@@ -1,15 +1,23 @@
 {
   "compilerOptions": {
+    "noImplicitAny": false,
+    "baseUrl": ".",
     "target": "es5",
     "module": "commonjs",
-    "lib": [
-      "dom",
-      "es2015"
-    ],
     "declaration": true,
     "outDir": "./lib",
-    "strict": true
+    "strict": true,
+    "lib": [
+      "es2018",
+      "es2018.promise"
+    ],
+    "paths": {
+      "~/*": ["./*"]
+    }
   },
-  "include": ["src", "test/index.spec.ts"],
-  "exclude": ["node_modules", "**/__tests__/*"]
+  "include": ["src"],
+  "exclude": ["lib", "node_modules", "**/__tests__/*"],
+  "paths": {
+    "~/*": ["./*"]
+  }
 }
